@@ -26,5 +26,11 @@ repositories {
 
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	implementation ('org.springframework.boot:spring-boot-starter-data-jpa')
+	implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    // https://mvnrepository.com/artifact/postgresql/postgresql
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc41'
+
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
